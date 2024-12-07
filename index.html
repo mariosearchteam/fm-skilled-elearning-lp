@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/scss/main.css">
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+</head>
+<body>
+  <header>
+    <nav class="main-nav container split">
+        <a href="/"><picture>
+          <img src="./assets/logo-dark.svg" alt="skilled Logo Dark" aria-label="skilled Home Page">
+        </picture></a>
+        <button class="button">Get Started</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container split">
+      <div class="hero__content flow-content">
+        <h1 class="hero__title">Maximize skill, minimize budget</h1>
+        <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+        <button class="button button--pink">Get Started</button>
+      </div>
+      <div class="hero__image">
+        <picture>
+          <source 
+            type="image/webp" 
+            srcset="
+              ./assets/image-hero-desktop.webp 1x, 
+              ./assets/image-hero-desktop@2x.webp 2x" 
+            media="(min-width: 60rem)">
+          <source 
+            type="image/png" 
+            srcset="
+              ./assets/image-hero-desktop.png 1x,
+              ./assets/image-hero-desktop@2x.png 2x" 
+            media="(min-width: 60rem)">
+          
+          <source 
+            type="image/webp" 
+            srcset="
+              ./assets/image-hero-tablet.webp 1x,
+              ./assets/image-hero-tablet@2x.webp 2x" 
+            media="(min-width: 40rem)">
+          <source 
+            type="image/png" 
+            srcset="
+              ./assets/image-hero-tablet.png 1x,
+              ./assets/image-hero-tablet@2x.png 2x" 
+            media="(min-width: 40rem)">
+
+          <source 
+            type="image/webp" 
+            srcset="
+              ./assets/image-hero-mobile.webp 1x,
+              ./assets/image-hero-mobile@2x.webp 2x">
+          <source 
+            type="image/png" 
+            srcset="
+              ./assets/image-hero-mobile.png 1x,
+              ./assets/image-hero-mobile@2x.png 2x">
+          
+          <img src="image-hero-mobile.png" alt="Hero Image">
+        </picture>
+      </div>
+    </section>
+    <section class="courses container">
+      <div class="cards">
+        <div class="card bg-gradient">
+          <h2>Check out our most popular courses!</h2>
+        </div>
+        <div class="card flow-content container">
+          <img src="./assets/icon-animation.svg" alt="icon animation">  
+          <h3>Animation</h3>        
+          <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+          <button class="button button--link">Get Started</button>
+        </div>
+        <div class="card flow-content container">
+          <img src="./assets/icon-design.svg" alt="icon design">
+          <h3>Design</h3>
+          <p>Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+          <button class="button button--link">Get Started</button>
+        </div>
+        <div class="card flow-content container">
+          <img src="./assets/icon-photography.svg" alt="icon photography">
+          <h3>Photography</h3>
+          <p>Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+          <button class="button button--link">Get Started</button>
+        </div>
+        <div class="card flow-content container">
+          <img src="./assets/icon-crypto.svg" alt="icon crypto">
+          <h3>Crypto</h3>
+          <p>All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+          <button class="button button--link">Get Started</button>
+        </div>
+        <div class="card flow-content container">
+          <img src="./assets/icon-business.svg" alt="icon business">
+          <h3>Business</h3>
+          <p>A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+          <button class="button button--link">Get Started</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav class="footer-nav container split">
+      <a href="/"><picture>
+          <img src="./assets/logo-light.svg" alt="skilled Logo Light" aria-label="skilled Home Page">
+        </picture></a>
+        <button class="button button--purple">Get Started</button>
+    </nav>
+  </footer>
+</body>
+</html>

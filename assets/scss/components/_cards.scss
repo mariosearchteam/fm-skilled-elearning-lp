@@ -1,0 +1,63 @@
+@use "../variables" as *;
+.cards {
+  margin-top: $spacer-800;
+  display: grid;
+  gap: $spacer-1000 $spacer-200;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  align-items: start;
+  padding: $spacer-400;
+  box-shadow: $box-shadow;
+  border-radius: $spacer-200;
+  background: $clr-neutral-100;
+  & h2 {
+    font-size: $text-preset-2;
+  }
+  & img {
+    position: absolute;
+    top: -2rem;
+  }
+  & h3 {
+    font-size: $text-preset-3;
+    color: $clr-blue-900;
+  }
+  & p {
+    font-weight: 700;
+  }
+}
+
+.card.bg-gradient {
+  background: $gradient-pink;
+  color: $clr-neutral-100;
+}
+
+@media (min-width: 40rem) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 60rem) {
+  .cards {
+    margin-top: $spacer-1600;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacer-1000 $spacer-400;
+  }
+  .card {
+    padding: $spacer-600 $spacer-400;
+    & h2 {
+      font-size: $text-preset-3;
+    }
+    & h3 {
+      font-size: $text-preset-4;
+    }
+    & p {
+      font-weight: 400;
+    }
+  }
+}

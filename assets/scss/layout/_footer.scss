@@ -1,0 +1,8 @@
+@use "../variables" as *;
+footer {
+  background: $clr-blue-900;
+  padding: $spacer-200 0;
+  & img {
+    width: $spacer-1000;
+  }
+}

@@ -1,0 +1,54 @@
+@use "../variables" as *;
+.button {
+  padding: $spacer-150 $spacer-400;
+  font-size: $text-preset-4;
+  color: $clr-neutral-100;
+  background-color: $clr-blue-900;
+  border-radius: $spacer-400;
+  border: none;
+  z-index: 1;
+  &:hover,
+  &:focus {
+    background-color: $clr-blue-600;
+  }
+  &.button--link {
+    background: none;
+    padding: 0;
+    color: $clr-pink-600;
+    font-weight: 700;
+    &:hover,
+    &:focus {
+      color: $clr-pink-300;
+    }
+  }
+  &.button--pink {
+    background: $gradient-pink;
+    transition: background 0.2s ease-in-out;
+    &:hover,
+    &:focus {
+      background: $gradient-pink-light;
+    }
+  }
+  &.button--purple {
+    background: $gradient-purple;
+    transition: background 0.2s ease-in-out;
+    &:hover,
+    &:focus {
+      background: $gradient-purple-light;
+    }
+  }
+}
+
+@media (min-width: 40rem) {
+  .button {
+    padding: $spacer-200 $spacer-400;
+    font-size: $text-preset-4;
+  }
+}
+
+@media (min-width: 60rem) {
+  .button {
+    padding: $spacer-200 $spacer-400;
+    font-size: $text-preset-5;
+  }
+}

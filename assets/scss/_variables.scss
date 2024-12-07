@@ -1,0 +1,46 @@
+/*font import*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+
+/*colors*/
+
+$clr-blue-900: #13183f;
+$clr-blue-600: #666ca3;
+$clr-pink-600: #f74780;
+$clr-pink-300: #ffa7c3;
+$clr-neutral-100: #fff;
+$clr-neutral-500: #83869a;
+
+/*gradients*/
+
+$gradient-pink: linear-gradient(0deg, #f02aa6 0%, #ff6f48 100%);
+$gradient-pink-light: linear-gradient(0deg, #ffa7c3 0%, #ff6f48 100%);
+$gradient-purple: linear-gradient(0deg, #4851ff 0%, #f02aa6 100%);
+$gradient-purple-light: linear-gradient(0deg, #83869a 0%, #4851ff 100%);
+$gradient-bg: linear-gradient(to bottom, #fff, #f0f1ff);
+
+/*fonts*/
+$text-preset-1: clamp(2.5rem, 2.1849rem + 1.4612vw, 3rem);
+$text-preset-2: clamp(2rem, 1.8425rem + 0.7306vw, 2.5rem);
+$text-preset-3: clamp(1.5rem, 1.3425rem + 0.7306vw, 2rem);
+$text-preset-4: clamp(1.25rem, 1.1712rem + 0.3653vw, 1.5rem);
+$text-preset-5: clamp(1.1rem, 0.8356rem + 0.1826vw, 1.25rem);
+$text-preset-6: clamp(0.875rem, 0.8356rem + 0.1826vw, 1rem);
+
+$ff: "Plus Jakarta Sans", sans-serif;
+
+$spacer-100: 0.5rem;
+$spacer-150: 0.75rem;
+$spacer-200: 1rem;
+$spacer-300: 1.5rem;
+$spacer-400: 2rem;
+$spacer-500: 2.5rem;
+$spacer-600: 3rem;
+$spacer-700: 3.5rem;
+$spacer-800: 4rem;
+$spacer-900: 4.5rem;
+$spacer-1000: 5rem;
+$spacer-1400: 7rem;
+$spacer-1600: 8rem;
+$spacer-1800: 9rem;
+
+$box-shadow: 0 $spacer-300 $spacer-600 hsla(233, 92%, 29%, 0.042);

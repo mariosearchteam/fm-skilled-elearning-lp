@@ -1,0 +1,15 @@
+@use "../variables" as *;
+.main-nav {
+  padding-top: $spacer-200;
+  & img {
+    width: $spacer-1000;
+  }
+}
+
+@media (min-width: 60rem) {
+  .main-nav {
+    & img {
+      width: $spacer-1400;
+    }
+  }
+}

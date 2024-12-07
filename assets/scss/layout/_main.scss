@@ -1,0 +1,46 @@
+@use "../variables" as *;
+main {
+  background: $gradient-bg;
+  padding: $spacer-800 0;
+}
+
+.hero {
+  flex-direction: column;
+  &__title {
+    font-size: $text-preset-1;
+    font-weight: 700;
+    color: $clr-blue-900;
+  }
+  & .button {
+    margin-top: $spacer-400;
+  }
+  &__image {
+    margin-top: $spacer-1000;
+  }
+}
+
+@media (min-width: 40rem) {
+  .hero {
+    flex-direction: row;
+    &__image {
+      margin-top: -10rem;
+      margin-right: -20rem;
+    }
+    &__content {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (min-width: 60rem) {
+  .hero {
+    &__image {
+      width: 200%;
+      margin-top: -17.5rem;
+      margin-right: -60rem;
+    }
+    & p {
+      max-width: 25ch;
+    }
+  }
+}

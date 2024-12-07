@@ -1,0 +1,27 @@
+@use "./variables" as *;
+
+.flow-content > * + * {
+  margin-top: $spacer-200;
+}
+
+.text-accent {
+  color: var(--clr-accent-500);
+}
+
+.container {
+  padding: 0 $spacer-200;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 40rem) {
+  .container {
+    padding: 0 $spacer-400;
+  }
+}
